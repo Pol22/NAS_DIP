@@ -9,11 +9,6 @@
 - `train.py` - training script which forming learning per each GPU, runs by `subprocess` module from `evolution` script
 - `unit.py` - module which working with binary structure of model (generation, transforming to units, transforming to hex/string)
 
-### Some results
-
-| High Res | Super Res | Bicubic |
-|:---:|:---:|:---:|
-| ![](img/hr.png) | ![](img/sr.png) | ![](img/bicubic.png) |
 
 ### Example of usage
 ```console
@@ -23,11 +18,11 @@ foo@bar:~/DIP_NAS$ python evolution.py --img ./img/hr.png --gpus 4
 ### Distribution of fitness per generation
 
 #### PSNR distribution _(average clipping selection of models)_
-![](img/top_mean.png) | ![](img/mean.png)
-- | -
+|![](img/top_mean.png) | ![](img/mean.png) |
+| - | - |
 #### PSNR distribution _(median clipping selection of models)_
-![](img/top_median.png) | ![](img/median.png)
-- | -
+|![](img/top_median.png) | ![](img/median.png) |
+| - | - |
 
 ### TODO
 - PSNR distribution _(mixin with random models)_
